@@ -1,5 +1,5 @@
-#ifndef Server.h 
-#define Server.h  
+#ifndef Server_h 
+#define Server_h  
 
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -19,6 +19,6 @@ struct Server{
   void (*launch)(void);
 };
 
-struct Server server_construcor(int domain, int service, int protocol, u_long interface, int port, int backlog, voiid (*launch)(void));
+struct Server server_constructor(int domain, int service, int protocol, u_long interface, int port, int backlog, void (*launch)(void));
 
 #endif

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Server server_construcor(int domain, int service, int protocol, u_long interface, int port, int backlog, voiid (*launch)(void)){
+struct Server server_constructor(int domain, int service, int protocol, u_long interface, int port, int backlog, void (*launch)(void)){
     struct Server server;
 
     server.domain = domain;
